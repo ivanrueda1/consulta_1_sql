@@ -57,3 +57,19 @@ SELECT * FROM Cliente WHERE identificion<=110 AND ciudad = 'Cali'
 
 SELECT * FROM Cliente WHERE Nombre LIKE 'A%'
 ![Consulta](consulta6.png "consulta 6")
+
+### Consulta No. 7
+
+7. Se desea obtener los registros cuyos nombres contengan la letra 'a'
+
+SELECT * FROM Cliente WHER Nombre LIKE '%a%'
+
+![Consulta](CONSULTA7.png "consulta 7")
+
+### Consulta No.8
+
+8. Se desea obtener los registros donde la cuarta letra del nombre del cliente sea 'a'
+
+SELECT * FROM Cliente WHERE Nombre LIKE '____a'
+
+![Consulta](consulta8.png "consulta 8")
