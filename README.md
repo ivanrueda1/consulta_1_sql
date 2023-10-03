@@ -73,3 +73,11 @@ SELECT * FROM Cliente WHER Nombre LIKE '%a%'
 SELECT * FROM Cliente WHERE Nombre LIKE '____a'
 
 ![Consulta](consulta8.png "consulta 8")
+
+### Consulta No 9
+
+9. Si se desea obtener los registros cuya identificacion este entre 110 y 150, se debe utilizar la clausula BETWEEN, que sirve para especificar un intervalo de valores.
+
+SELECT * FROM Cliente WHERE Indetificacion BETWEEN 110 AND 150
+
+![Consulta](consulta9.png "consulta 9")
