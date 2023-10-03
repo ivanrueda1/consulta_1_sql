@@ -81,3 +81,14 @@ SELECT * FROM Cliente WHERE Nombre LIKE '____a'
 SELECT * FROM Cliente WHERE Indetificacion BETWEEN 110 AND 150
 
 ![Consulta](consulta9.png "consulta 9")
+
+### Instruccion DELETE
+-Permite borrar todos o un grupo especifico de registros de una tabla.
+-Su formato es DELETE FROM Nombre-tabla
+
+### Eliminacion No.1
+
+1. Eliminar los registros cuya identificacion sea mayor a 160
+
+DELETE FROM Cliente WHERE >160
+![Consulta](consulta10.png "consulta 10")
