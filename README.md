@@ -92,3 +92,21 @@ SELECT * FROM Cliente WHERE Indetificacion BETWEEN 110 AND 150
 
 DELETE FROM Cliente WHERE >160
 ![Consulta](consulta10.png "consulta 10")
+
+2. Eliminar los registros cuya identificacion sea igual a 116
+
+DELETE FROM Cliente WHERE identificacion = 116
+
+### Instruccion UPDATE
+-Permite actualizar un campo de una tabla.
+-Su formato es UPDATE Nombre-tabla SET nombre_campo = valor
+
+### Actualizacion No.1 
+
+1. Para actualizar la ciudad de nacimiento de Cristian Vanegas, cuya Identificacion es 114
+
+UPDATE usuario SET ciuda_nac = 'Pereira' WHERE Identidific='114'
+
+![Actualizacion](consulta11.png "Actualizacion_1")
+
+
