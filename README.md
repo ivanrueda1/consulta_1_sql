@@ -109,4 +109,41 @@ UPDATE usuario SET ciuda_nac = 'Pereira' WHERE Identidific='114'
 
 ![Actualizacion](consulta11.png "Actualizacion_1")
 
+## Creacion Tabla Pedido
+
+### Diccionario de datos
+|Campo|Tipo de dato|Longitud|
+|-----|------------|--------|
+|***No_pedido**|varchar|15|
+|iden_cliente|varchar|15|
+|fecha_compra|date||
+|fecha_vencimiento|date||
+|observacion|varchar|30|
+
+### Modelo Entidad - Relacion
+
+![Modelo](modelo.png "Modelo")
+
+### Tabla: pedido
+
+![pedido](tabla_pedido.png "pedido")
+
+## OPERADOR INNER JOIN
+-Permite obtener datos de dos o mas tablas.
+- Cuando se realiza la concatenacion de las tablas, no necesariamente se debe mostrar todos los datos de la tabla
+- su formato es:
+SELECT tabla1.campo, tabla2.campo,... FROM tabla_principal INNER JPOIN tabla_secundaria ON campo_comun_tabla1 = campo_comun_tabla2
+
+1. Para visualizar los campos identificacion, nombre, apellidos de la tabla cliente y no_pedido, fecha_compra, fecha_vencimiento y observacion de la tabla pedido, se debe realizar la siguiente instruccion: 
+
+SELECT Cliente.identificacion, Cliente.nombre, Cliente.Apellidos, pedido.no_pedido, pedido.fecha_compra, pedido.fecha_vencimiento, pedido.observacion FROM Cliente INNER JOIN pedido ON Cliente.identificacion = pedido.iden_cliente
+
+![pedido](innerjoin1.png "pedido")
+
+2. Para visualizar todos los campos de las tablas Cliente y Pedido donde identificacion sea mayor que 100, se debe realizar la siguiente instruccion:
+
+SELECT Cliente.*, Pedido.*FROM Cliente INNER JOIN Pedido ON Cliente.Indetificación = Pedido.iden_cliente WHERE Cliente.Indetificación>100;
+
+![INNERJOIN](ONNERJOIN2.png "INNERJOIN")
+
 
